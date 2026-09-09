@@ -102,20 +102,6 @@ if st.button('🔎 Buscar'):
                 puesto, color = obtener_puesto(fila.get('vscrNroEti'))
                 rechazado = es_rechazado(fila.get('vscrLabMed'))
 
-                st.markdown(
-                    """
-                    <div style="
-                        border:1px solid #e6e6e6;
-                        border-radius:12px;
-                        padding:14px;
-                        margin-bottom:12px;
-                        background:#ffffff;
-                        box-shadow:0 1px 3px rgba(0,0,0,0.05);
-                    ">
-                    """,
-                    unsafe_allow_html=True
-                )
-
                 st.write(f"📅 Fecha: {fila.get('vscrFechas', '')}")
                 st.write(f"🩸 Grupo sanguíneo: {convertir_grupo(fila.get('vscrGrsCon'))}")
                 st.write(f"💬 Comentario: {fila.get('vscrComent', '')}")
@@ -129,6 +115,5 @@ if st.button('🔎 Buscar'):
                         unsafe_allow_html=True
                     )
 
-                st.markdown("</div>", unsafe_allow_html=True)
         else:
             st.info("Este donante no tiene donaciones registradas.")
