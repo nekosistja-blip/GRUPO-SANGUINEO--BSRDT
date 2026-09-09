@@ -20,10 +20,7 @@ button[kind="header"], button[title*="Share"], button[title*="share"] {display:n
 a[title*="Share"], a[title*="share"] {display:none !important;}
 div[data-testid="stActionButtonIcon"], div[data-testid="stAppToolbar"] {display:none !important;}
 [data-testid="stAppViewContainer"] > .main {padding-top: 0rem !important;}
-.block-container {padding-top: 0.3rem !important;}
-
-/* Mejoras visuales seguras */
-.stButton button {font-weight:800 !important;}
+.block-container {padding-top: 1rem !important;}
 </style>
 """, unsafe_allow_html=True)
 
